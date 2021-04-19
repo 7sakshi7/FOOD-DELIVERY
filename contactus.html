@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .h-primary {
+            font-size: 2.8rem;
+            padding: 12px;
+            color:white;
+            font-size: 5rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: oblique;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        /* .contact{
+           
+            position: relative;
+        } */
+        .contact::before{
+            content: "";
+            background: url('../pics/pexels-photo-955081.jpeg') no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.65;
+        }
+        .contact-box form{
+            width: 40%;
+            
+        }
+        .contact-box label{
+            font-size: 1.3rem;
+            
+        }
+        .contact-box input{
+            padding: 0.5rem;
+            font-size: 1.1rem;
+            border-radius: 20px;
+            margin: 34px 23px;
+        }
+        /* #contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+        } */
+        .contact-box{
+            
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .formgrp{
+            color: white;
+            padding: 0.5rem;
+            margin: 34px 23px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div class="conatct-box">
+            <form action="">
+                <div class="formgrp">
+                    <label for="name">Name : </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="formgrp">
+                    <label for="email">Email id : </label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email-id">
+                </div>
+                <div class="formgrp">
+                    <label for="contact">Conatct No : </label>
+                    <input type="number" name="contact" id="contact" placeholder="Enter Your Contact number">
+                </div>
+                <div class="formgrp">
+                    <label for="message">Message : </label>
+                    <input type="textarea" name="message" id="message" placeholder="Enter Your Message">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
